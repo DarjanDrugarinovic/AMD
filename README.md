@@ -1,5 +1,7 @@
 # AMD
 
+![Demo](documentation/demo.gif)
+
 ## Server
 
 ```bash
