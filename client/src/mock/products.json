@@ -1,0 +1,17 @@
+[
+  { "id": 1,  "name": "Ryzen 9 7950X",  "family": "Ryzen 7000", "category": "CPU", "socket": "AM5",      "release_date": "2022-09-27", "status": "active" },
+  { "id": 2,  "name": "Ryzen 9 7900X",  "family": "Ryzen 7000", "category": "CPU", "socket": "AM5",      "release_date": "2022-09-27", "status": "active" },
+  { "id": 3,  "name": "Ryzen 7 7700X",  "family": "Ryzen 7000", "category": "CPU", "socket": "AM5",      "release_date": "2022-09-27", "status": "active" },
+  { "id": 4,  "name": "Ryzen 5 7600X",  "family": "Ryzen 7000", "category": "CPU", "socket": "AM5",      "release_date": "2022-09-27", "status": "active" },
+  { "id": 5,  "name": "Ryzen 9 5950X",  "family": "Ryzen 5000", "category": "CPU", "socket": "AM4",      "release_date": "2020-11-05", "status": "discontinued" },
+  { "id": 6,  "name": "Ryzen 7 5800X",  "family": "Ryzen 5000", "category": "CPU", "socket": "AM4",      "release_date": "2020-11-05", "status": "discontinued" },
+  { "id": 7,  "name": "Ryzen 5 5600X",  "family": "Ryzen 5000", "category": "CPU", "socket": "AM4",      "release_date": "2020-11-05", "status": "discontinued" },
+  { "id": 8,  "name": "RX 7900 XTX",   "family": "RDNA 3",     "category": "GPU", "socket": "PCIe 4.0", "release_date": "2022-12-13", "status": "active" },
+  { "id": 9,  "name": "RX 7800 XT",    "family": "RDNA 3",     "category": "GPU", "socket": "PCIe 4.0", "release_date": "2023-09-06", "status": "active" },
+  { "id": 10, "name": "RX 7600",       "family": "RDNA 3",     "category": "GPU", "socket": "PCIe 4.0", "release_date": "2023-05-24", "status": "active" },
+  { "id": 11, "name": "Ryzen 7 7730U", "family": "Ryzen 7000", "category": "APU", "socket": "FP7",      "release_date": "2022-08-29", "status": "active" },
+  { "id": 12, "name": "Ryzen 5 7530U", "family": "Ryzen 7000", "category": "APU", "socket": "FP7",      "release_date": "2022-08-29", "status": "active" },
+  { "id": 13, "name": "Ryzen 9 8945HS","family": "Ryzen 8000", "category": "APU", "socket": "FP8",      "release_date": "2024-01-08", "status": "active" },
+  { "id": 14, "name": "Ryzen 7 8845HS","family": "Ryzen 8000", "category": "APU", "socket": "FP8",      "release_date": "2024-01-08", "status": "active" },
+  { "id": 15, "name": "Ryzen 5 8645HS","family": "Ryzen 8000", "category": "APU", "socket": "FP8",      "release_date": "2024-06-01", "status": "upcoming" }
+]
