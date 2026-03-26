@@ -5,6 +5,7 @@ import axios, {
   type AxiosResponseHeaders,
 } from "axios";
 import env from "config/env";
+import mockServices from "api/mock-services";
 
 type RequestOptions<T> = AxiosRequestConfig & {
   schema?: z.ZodType<T>;
@@ -61,8 +62,13 @@ async function makeRequest<T>(
 }
 
 const services = {
-  get: async <T>(url: string, { schema, ...config }: RequestOptions<T> = {}) =>
-    await makeRequest<T>({ method: "GET", url, ...config }, schema),
+  get: async <T>(url: string, { schema, ...config }: RequestOptions<T> = {}) => {
+    if (env.USE_MOCK) {
+      const data = await mockServices.get<T>(url);
+      return schema ? schema.parse(data) : data;
+    }
+    return await makeRequest<T>({ method: "GET", url, ...config }, schema);
+  },
   post: async <T>(
     url: string,
     data?: unknown,
