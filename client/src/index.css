@@ -1,0 +1,14 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
