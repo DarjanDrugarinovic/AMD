@@ -4,7 +4,9 @@ Live demo: https://DarjanDrugarinovic.github.io/AMD/
 
 ![Demo](documentation/demo.gif)
 
-## Server
+## Run Project
+
+### Server
 
 ```bash
 cd server
@@ -13,7 +15,7 @@ uv run python manage.py migrate
 uv run python manage.py runserver
 ```
 
-## Database
+### Database
 
 ```bash
 cd server
@@ -27,7 +29,7 @@ conn.close()
 "
 ```
 
-## Client
+### Client
 
 ```bash
 cd client
