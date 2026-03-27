@@ -1,0 +1,1 @@
+import{q as e}from"./useRouteBuilder-PB-bXVl4.js";import{r as t,t as n}from"./SectionLayout-DEZU3NpH.js";var r=e(),i=()=>(0,r.jsx)(n,{children:(0,r.jsx)(t,{alignItems:`center`,gap:2,children:(0,r.jsx)(`h1`,{children:`Click Sign In →`})})}),a=()=>(0,r.jsx)(i,{});export{a as default};
