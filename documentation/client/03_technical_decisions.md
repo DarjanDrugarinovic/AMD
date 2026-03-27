@@ -6,16 +6,13 @@ GitHub Pages has no server-side routing. With `BrowserRouter`, refreshing or nav
 
 `HashRouter` puts the route after a `#` (`/#/product/1`). The browser never sends the hash to the server, so GitHub Pages always serves `index.html` and React Router handles the rest client-side.
 
-## `base: "./"` in vite.config.ts
+## `base: "/AMD/"` in vite.config.ts
 
-The built asset paths are relative, so they resolve correctly regardless of where the app is served:
+Asset paths are built relative to `/AMD/`, matching where GitHub Pages serves the app (`DarjanDrugarinovic.github.io/AMD/`).
 
-- Local dev → `localhost:5173/`
-- GitHub Pages → `DarjanDrugarinovic.github.io/AMD/`
+Local dev is unaffected as long as you access it at `localhost:5173/AMD/`. If that is inconvenient, change `base` to `"./"` for local work and back to `"/AMD/"` before pushing — or use an env variable to switch.
 
-Using `base: "/AMD/"` would have broken local dev (app only accessible at `localhost:5173/AMD/`).
-
-## `vite-tsconfig-paths` plugin
+## Path aliases via Vite 8 native tsconfig support
 
 The codebase uses bare imports resolved via `baseUrl: "src"` in `tsconfig.app.json`:
 
@@ -24,4 +21,4 @@ import services from "api/services";   // resolves to src/api/services.ts
 import env from "config/env";           // resolves to src/config/env.ts
 ```
 
-Vite does not read `baseUrl` from tsconfig automatically. The `vite-tsconfig-paths` plugin bridges this. Without it the Vite build fails with module-not-found errors.
+Vite 8 supports this natively via `resolve.tsconfigPaths: true` in `vite.config.ts`. No extra plugin is needed.
