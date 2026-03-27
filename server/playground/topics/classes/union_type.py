@@ -5,7 +5,7 @@ def union_type():
     TS:  type ID = string | number
     PY:  ID = str | int          — Python 3.10+
     """
-    ID = str | int
+    type ID = str | int
 
     def print_id(id: ID):
         print(id, "→", type(id).__name__)

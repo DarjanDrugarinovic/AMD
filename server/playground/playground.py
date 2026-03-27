@@ -13,7 +13,7 @@ from topics import variables, loops, functions, classes, conditionals, operators
 # Change "run" to execute a different example.
 # Format: "module.function_name"
 config = {
-    "run": "variables.basic_types"
+    "run": "lambda_task"
 }
 
 # -----------------------------------------------------------------------------
@@ -22,68 +22,68 @@ config = {
 # -----------------------------------------------------------------------------
 dispatch = {
     # --- variables ---
-    "variables.basic_types":               variables.basic_types,
-    "variables.basic_types_task":          variables.basic_types_task,
-    "variables.dict_":                     variables.dict_,
-    "variables.dict_task":                 variables.dict_task,
-    "variables.tuple_":                    variables.tuple_,
-    "variables.tuple_task":                variables.tuple_task,
-    "variables.set_":                      variables.set_,
-    "variables.set_task":                  variables.set_task,
-    "variables.unpacking":                 variables.unpacking,
-    "variables.unpacking_task":            variables.unpacking_task,
+    "basic_types":               variables.basic_types,
+    "basic_types_task":          variables.basic_types_task,
+    "dict_":                     variables.dict_,
+    "dict_task":                 variables.dict_task,
+    "tuple_":                    variables.tuple_,
+    "tuple_task":                variables.tuple_task,
+    "set_":                      variables.set_,
+    "set_task":                  variables.set_task,
+    "unpacking":                 variables.unpacking,
+    "unpacking_task":            variables.unpacking_task,
 
     # --- loops ---
-    "loops.for_range":                     loops.for_range,
-    "loops.for_range_task":                loops.for_range_task,
-    "loops.for_each":                      loops.for_each,
-    "loops.for_each_task":                 loops.for_each_task,
-    "loops.while_loop":                    loops.while_loop,
-    "loops.while_loop_task":               loops.while_loop_task,
-    "loops.list_comprehension":            loops.list_comprehension,
-    "loops.list_comprehension_task":       loops.list_comprehension_task,
-    "loops.comprehension_filter":          loops.comprehension_filter,
-    "loops.comprehension_filter_task":     loops.comprehension_filter_task,
-    "loops.enumerate_zip":                 loops.enumerate_zip,
-    "loops.enumerate_zip_task":            loops.enumerate_zip_task,
+    "for_range":                     loops.for_range,
+    "for_range_task":                loops.for_range_task,
+    "for_each":                      loops.for_each,
+    "for_each_task":                 loops.for_each_task,
+    "while_loop":                    loops.while_loop,
+    "while_loop_task":               loops.while_loop_task,
+    "list_comprehension":            loops.list_comprehension,
+    "list_comprehension_task":       loops.list_comprehension_task,
+    "comprehension_filter":          loops.comprehension_filter,
+    "comprehension_filter_task":     loops.comprehension_filter_task,
+    "enumerate_zip":                 loops.enumerate_zip,
+    "enumerate_zip_task":            loops.enumerate_zip_task,
 
     # --- functions ---
-    "functions.basic_function":            functions.basic_function,
-    "functions.basic_function_task":       functions.basic_function_task,
-    "functions.default_args":              functions.default_args,
-    "functions.default_args_task":         functions.default_args_task,
-    "functions.lambda_":                   functions.lambda_,
-    "functions.lambda_task":               functions.lambda_task,
-    "functions.args_kwargs":               functions.args_kwargs,
-    "functions.args_kwargs_task":          functions.args_kwargs_task,
+    "basic_function":            functions.basic_function,
+    "basic_function_task":       functions.basic_function_task,
+    "default_args":              functions.default_args,
+    "default_args_task":         functions.default_args_task,
+    "lambda_":                   functions.lambda_,
+    "lambda_task":               functions.lambda_task,
+    "args_kwargs":               functions.args_kwargs,
+    "args_kwargs_task":          functions.args_kwargs_task,
 
     # --- classes ---
-    "classes.basic_class":                 classes.basic_class,
-    "classes.basic_class_task":            classes.basic_class_task,
-    "classes.type_hints":                  classes.type_hints,
-    "classes.type_hints_task":             classes.type_hints_task,
-    "classes.type_alias":                  classes.type_alias,
-    "classes.type_alias_task":             classes.type_alias_task,
-    "classes.union_type":                  classes.union_type,
-    "classes.union_type_task":             classes.union_type_task,
-    "classes.dataclass_":                  classes.dataclass_,
-    "classes.dataclass_task":              classes.dataclass_task,
-    "classes.inheritance":                 classes.inheritance,
-    "classes.inheritance_task":            classes.inheritance_task,
+    "basic_class":                 classes.basic_class,
+    "basic_class_task":            classes.basic_class_task,
+    "type_hints":                  classes.type_hints,
+    "type_hints_task":             classes.type_hints_task,
+    "type_alias":                  classes.type_alias,
+    "type_alias_task":             classes.type_alias_task,
+    "union_type":                  classes.union_type,
+    "union_type_task":             classes.union_type_task,
+    "dataclass_":                  classes.dataclass_,
+    "dataclass_task":              classes.dataclass_task,
+    "inheritance":                 classes.inheritance,
+    "inheritance_task":            classes.inheritance_task,
 
     # --- conditionals ---
-    "conditionals.if_else":                conditionals.if_else,
-    "conditionals.if_else_task":           conditionals.if_else_task,
+    "if_else":                conditionals.if_else,
+    "if_else_task":           conditionals.if_else_task,
 
     # --- operators ---
-    "operators.comparison":                operators.comparison,
-    "operators.comparison_task":           operators.comparison_task,
-    "operators.logical":                   operators.logical,
-    "operators.logical_task":              operators.logical_task,
+    "comparison":                operators.comparison,
+    "comparison_task":           operators.comparison_task,
+    "logical":                   operators.logical,
+    "logical_task":              operators.logical_task,
 
     # --- exceptions ---
-    "exceptions.try_except":               exceptions.try_except,
-    "exceptions.try_except_task":          exceptions.try_except_task,
+    "try_except":               exceptions.try_except,
+    "try_except_task":          exceptions.try_except_task,
 }
 
 # -----------------------------------------------------------------------------
