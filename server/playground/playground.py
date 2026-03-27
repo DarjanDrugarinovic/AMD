@@ -1,5 +1,6 @@
 # =============================================================================
 # PLAYGROUND — playground.py
+# cd server/playground
 # Run: uvx watchfiles "python playground.py" playground.py topics/
 #      │    │          │                      │            │
 #      │    │          │                      └────────────┴── watch these files/folders for changes
