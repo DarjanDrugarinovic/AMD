@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { type FC } from 'react';
 import { TableHead as TableHeadMui } from '@mui/material';
 import { TableHeadSortRow } from './sort-row/SortRow';
 

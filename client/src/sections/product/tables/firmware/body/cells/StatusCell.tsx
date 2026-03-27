@@ -1,22 +1,24 @@
 import { Typography } from '@mui/material';
-import { ExecutionResult } from 'enums/ExecutionResult';
-import { useStatusSx } from 'sections/main/reports-history/execution-details/useStatusSx';
+import { type SxProps } from '@mui/material';
+
+type FirmwareStatus = 'stable' | 'beta' | 'deprecated';
 
 type Props = {
-  status: ExecutionResult;
+  status: FirmwareStatus;
 };
 
-export const useRenderStatusCell = () => {
-  const getStatusSx = useStatusSx();
-  return {
-    renderStatusCell: (status: ExecutionResult) => <StatusCell status={status} getStatusSx={getStatusSx} />
-  };
+const statusSx: Record<FirmwareStatus, SxProps> = {
+  stable:     { color: 'success.main', fontWeight: 'bold' },
+  beta:       { color: 'warning.main', fontWeight: 'bold' },
+  deprecated: { color: 'text.disabled' },
 };
 
-type StatusCellProps = Props & {
-  getStatusSx: ReturnType<typeof useStatusSx>;
-};
+export const useRenderStatusCell = () => ({
+  renderStatusCell: (status: FirmwareStatus) => <StatusCell status={status} />,
+});
 
-const StatusCell = ({ status, getStatusSx }: StatusCellProps) => <Typography sx={getStatusSx(status)}>{status}</Typography>;
+const StatusCell = ({ status }: Props) => (
+  <Typography sx={statusSx[status]}>{status}</Typography>
+);
 
 export default StatusCell;

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { type FC } from 'react';
 import { TableCell, TableRow } from '@mui/material';
 import { useColumns } from './useColumns';
 
