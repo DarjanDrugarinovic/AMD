@@ -21,9 +21,9 @@ export const TableBodyWrapper = <T,>({ columns, rows, getRowKey, onRowClick, sel
   return (
     <TableBody>
       {rows.length === 0 && <NoDataRow colSpan={columns.length} />}
-      {rows.map((item) => (
+      {rows.map((item, index) => (
         <TableRow
-          key={getRowKey(item)}
+          key={`row${index}-${getRowKey(item)}`}
           hover={!!onRowClick}
           selected={getRowKey(item) === selectedRowKey}
           onClick={() => onRowClick?.(item)}
